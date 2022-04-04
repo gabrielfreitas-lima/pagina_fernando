@@ -1,0 +1,80 @@
+.container{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .tema {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 35px;
+    padding: 0px 100px 0px 100px;
+}
+
+.container .tema .color{
+    height: 5px;
+    width: 62%;
+    background-color: #00E0FF;
+    margin-left: 25px;
+}
+
+.container .infos{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 0px 100px 0px 100px;
+}
+
+.container .infos .infos-fernando {
+    width: 20%;
+    flex-grow: 1;
+    margin: 15px 15px 25px 15px;
+}
+.container .infos .infos-fernando .imgs{
+    overflow: hidden;
+}
+
+.container .infos .infos-fernando .imgs img{
+    width: auto;
+    height: auto;
+    max-width: 750px;
+    max-height: 900px;
+}
+
+.container .infos .infos-fernando .subtitulo-txt{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 5px;
+    position: absolute;
+    color: white;
+    top: 420px;
+    height: 50px;
+    border-bottom: 3px solid #00E0FF;
+}
+
+.container .infos .infos-fernando .txt{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.container .infos .autor{
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.container .infos .edit-btn{
+    width: 25%;
+    height: 5%;
+    margin: 8px 8px 10px 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container .infos .edit-btn:hover{
+    background-color: black;
+    color: white;
+}
