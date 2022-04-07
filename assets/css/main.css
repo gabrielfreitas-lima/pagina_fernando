@@ -1,64 +1,81 @@
 .container{
-    width: 100%;
-    min-height: 100%;
+    width: 80%;
+    min-height: 2024px;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
-.container .tema {
+/*Titulos das areas*/
+.container .titulos-tema {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 35px;
-    padding: 0px 100px 0px 100px;
+    font-size: 25px;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 
-.container .tema .color{
-    height: 5px;
-    width: 62%;
-    background-color: #00E0FF;
-    margin-left: 25px;
+/*Borda do lado dos titulos*/
+.container .titulos-tema .color{
+    height: 4.5px;
+    flex-grow: 2;
+    background-color: steelblue;
+    margin-left: 5px;
 }
 
+/*Faz as materias ficarem uma do lado da outra*/
 .container .infos{
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    margin: 0px 100px 0px 100px;
 }
 
-.container .infos .infos-fernando {
+/*Controla o tamanho e as margens das materias*/
+.container .infos .dicas-fernando {
     width: 20%;
     flex-grow: 1;
-    margin: 15px 15px 25px 15px;
+    margin: 10px 15px 55px 15px;
 }
-.container .infos .infos-fernando .imgs{
+
+/*Define o tamanho da div img e não deixa a imagem sair da div*/
+.container .infos .dicas-fernando .imgs{
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
-.container .infos .infos-fernando .imgs img{
-    width: auto;
-    height: auto;
-    max-width: 750px;
-    max-height: 900px;
+/*Class para as imagens do primeiro tema*/
+.container .infos .dicas-fernando .imgs .imgs-inicio{
+    width: 130%;
+    height: 80%;
 }
 
-.container .infos .infos-fernando .subtitulo-txt{
+/*Estiliza o subtitulo dentro da imagem*/
+.container .infos .dicas-fernando .imgs .subtitulo-txt{
     font-size: 30px;
-    text-transform: uppercase;
     margin: 5px;
-    position: absolute;
+    position: relative;
+    bottom: 80px;
     color: white;
-    top: 420px;
-    height: 50px;
-    border-bottom: 3px solid #00E0FF;
+    opacity: 0.7;
 }
 
-.container .infos .infos-fernando .txt{
+/*Estiliza o subtitulo dentro da imagem*/
+.container .infos .dicas-fernando .imgs .subtitulo-txt:hover{
+    transition-duration: 0.7s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*Texto das materias*/
+.container .infos .dicas-fernando .txt{
+    height: 18%;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: -65px;
 }
 
+/*Mostra o nome do autor da materia*/
 .container .infos .autor{
     font-size: 10px;
     font-weight: 900;
@@ -66,15 +83,66 @@
     margin-top: 10px;
 }
 
-.container .infos .edit-btn{
-    width: 25%;
-    height: 5%;
-    margin: 8px 8px 10px 0px;
-    background-color: transparent;
-    cursor: pointer;
+/*Div do meio*/
+.container .div-meio{    
+    margin-top: 15px;
+    background-color: lightsteelblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-.container .infos .edit-btn:hover{
-    background-color: black;
-    color: white;
+/*Tamanho da div para imagem no meio*/
+.container .div-meio .img-meio{
+    width: 50%;
+}
+
+/*Tamanho do elemento img*/
+.container .div-meio .img-meio img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Texto da div meio*/
+.container .div-meio .txt-meio{
+    width: 50%;
+    padding: 0px 10px 0px 10px;
+}
+
+/*Coloca margem nas materias pequenas*/
+.container .infos2 .dicas-fernando{
+    flex-grow: 1;
+    margin: 10px 10px 30px 20px;
+}
+.container .infos2 .dicas-fernando #div-viagens{
+    height: auto;
+    width: auto;
+}
+
+.container .infos2 .dicas-fernando #div-viagens img{
+    max-height: 60%;
+}
+
+/*Manipula o tamanho da imagem e não a deixa sair da div*/
+.container .infos2 .dicas-fernando .imgs{
+    overflow: hidden;
+    height:auto;
+    width: auto;
+}
+
+/*Tamanho do elemento img*/
+.container .infos2 .dicas-fernando .imgs img{
+    max-width: 80%;
+}
+
+/*Subtitulos das materias pequenas*/
+.container .infos2 .dicas-fernando .img .sub2{
+    font-size: 10px;
+}
+
+/*Texto das materias pequenas*/
+.container .infos2 .dicas-fernando .txt{
+    margin-top: 5px;
+    font-size: 14px;
+    width: 70%;
 }
